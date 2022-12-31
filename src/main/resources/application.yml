@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: Subject Management
+  datasource:
+    url: jdbc:h2:mem:testDB
+    driver-class-name: org.h2.Driver
+  jpa:
+    show-sql: false
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: validate
